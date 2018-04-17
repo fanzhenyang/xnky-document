@@ -28,8 +28,13 @@ module.exports = {
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       js: 'never',
-      vue: 'never'
+      vue: 'never',
     }],
+
+    // 统一换行符，"\n" unix(for LF) and "\r\n" for windows(CRLF)，默认unix
+    // off或0: 禁用规则
+    'linebreak-style': 'off',
+
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
     'no-param-reassign': ['error', {
