@@ -3,7 +3,8 @@
         <navComponent>
             <docComponent 
             title='卡片列表'
-            html='html'></docComponent>
+            slot="content"
+            :html='html'></docComponent>
         </navComponent>
     </div>
 </template>

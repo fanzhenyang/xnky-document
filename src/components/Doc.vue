@@ -1,7 +1,7 @@
 <template>
     <article class="c-doc">
         <h3>{{title}}</h3>
-        <p class="c-doc-html" v-text="html"></p>
+        <p class="c-doc-html" v-text="preasHtml"></p>
     </article>
 </template>
 
@@ -12,10 +12,7 @@ export default {
       type: String,
     },
     html: {
-
-    },
-    css: {
-
+      type: String,
     },
   },
   data() {
@@ -25,13 +22,16 @@ export default {
   },
   computed: {
     preasHtml() {
-      return this.html.replice(/<\/?.+>/g, function( a, b, c ){
-        console.log(a,b,c);
+      return this.html.replace(/<\/?(\w+)/g, function() {
+        const arg = [].slice.call(arguments);
+        arg.forEach(element => {
+          
+        });
       });
     },
   },
   created() {
-    console.log(111);
+
   }
 
 };
