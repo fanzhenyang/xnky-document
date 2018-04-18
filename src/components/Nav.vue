@@ -18,7 +18,7 @@
         </el-menu>
     </el-col>
     <el-col :span="20">
-        <slot></slot>
+        <slot name="content"></slot>
     </el-col>
     </el-row>
 </template>
