@@ -7,10 +7,10 @@
         @open="handleOpen"
         @close="handleClose">
         <el-menu-item index="2">
-            <span slot="title">导航二</span>
+            <router-link slot="title" to="/Header" class="a-style">导航二</router-link>
         </el-menu-item>
         <el-menu-item index="3">
-            <span slot="title">导航三</span>
+            <router-link slot="title" to="/CardList" class="a-style">导航三</router-link>
         </el-menu-item>
         <el-menu-item index="4">
             <span slot="title">导航四</span>
@@ -37,3 +37,8 @@ export default {
   },
 };
 </script>
+
+<style lang="stylus" scoped>
+.a-style
+    display: block
+</style>
