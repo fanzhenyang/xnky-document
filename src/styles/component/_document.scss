@@ -4,4 +4,26 @@
 
 .c-doc-html {
     white-space: pre;
+    overflow-y: auto;
+    max-height: 300px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e2e2e2;
+    color: #555;
+}
+
+.c-doc-direction {
+    color: #777;
+}
+
+.code-tag {
+    color: #da5e2c;
+}
+
+.code-name {
+    color: #57bf78;
+}
+
+.code-value {
+    color: #4c8acc;
 }

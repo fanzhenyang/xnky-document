@@ -2,8 +2,10 @@
     <div>
         <navComponent>
             <docComponent 
-            title='卡片列表'
+            title='title'
+            subtitle='subtitle'
             slot="content"
+            :direction='direction'
             :html='html'></docComponent>
         </navComponent>
     </div>
@@ -56,6 +58,9 @@ export default {
                     <i class="iconfont icon-gongdan c-card-btn" aria-hidden="true"></i>
                 </div>
             </article>`,
+            title: '卡片列表',
+            subtitle: '用于列表展示',
+            direction: '用于列表展示',
     };
   },
   components: {
